@@ -31,10 +31,10 @@ fluidPage(
     
     ),
     
-    column(6, dataTableOutput("AIS")
+    column(7, dataTableOutput("AIS")
            ),
     
-    column(3, uiOutput("ui"))#,
+    column(2, uiOutput("ui"))#,
     
     # column(2, tableOutput("riv"),
     #        

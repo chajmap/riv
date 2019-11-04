@@ -14,7 +14,7 @@ src=function(pattern="nature"){
   if (nchar(pattern)<=3) return(NULL)
   print(.df[grep(pattern = pattern, x = .df$Journal),][order(.df[grep(pattern = pattern, x = .df$Journal),]$Ais,
                                                              .df[grep(pattern = pattern, x = .df$Journal),]$Journal,
-                                                             decreasing = TRUE),])
+                                                             decreasing = TRUE),], row.names = F)
 }
 
 riv = function(q=0,domaci=1,cizi.cr=0,cizi.zahr=0,afiliace2=0,afiliace3=0,poradi=1){
